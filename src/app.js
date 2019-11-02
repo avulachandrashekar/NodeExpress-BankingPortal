@@ -20,9 +20,6 @@ const userData = fs.readFileSync(path.join(__dirname + '/json/users.json'), {
 
 const users = JSON.parse(userData);
 
-console.log(users);
-console.log(accounts);
-
 app.get('/', (req, res) => {
     res.render('index', {
         title: "Account Summary",
